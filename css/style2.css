@@ -1,0 +1,189 @@
+@font-face {
+    /* 두꺼운 글씨체 */
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{ margin: 0; padding: 0;}
+li{ list-style: none;}
+a{ text-decoration: none; color: #222; display: block; font-family: 'Pretendard-Regular';}
+img{ width: 100%;}
+div{ box-sizing: border-box;}
+html, body{ width: 100%; overflow-x: hidden;}
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a{ color: #222; font-weight: normal;}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{ text-shadow: none;}
+.ui-page-theme-a a:active, html .ui-bar-a a:active, html .ui-body-a a:active, html body .ui-group-theme-a a:active {
+    color: #222 /*{a-link-active}*/;}
+.ui-page-theme-a a:hover, html .ui-bar-a a:hover, html .ui-body-a a:hover, html body .ui-group-theme-a a:hover{ 
+    color: #db0007;}
+
+.main{ width: 100%;}
+.main, .sub1, .sub2, .sub3{ width: 100%; }
+
+.header{ width: 100%; background-color: #db0007; position: fixed; z-index: 10; top: 0; left: 0; transition: top 0.3s ease-in-out;}
+.header-up{ top: -136px;}
+.header .header1{display: flex; flex-flow: row nowrap; justify-content: space-between; padding: 3vw;}
+.header .header1 .logo{ width: 15vw; }
+.header .header1 .menu_btn{ width: 10vw;}
+
+.header .header2{ height: 40px; background-color: #f33238;}
+.header .header2 ul{ display: flex; justify-content: space-between;}
+.header .header2 ul li{ width: 25vw;}
+.header .header2 ul li a{ text-align: center; line-height: 40px; color: #fcbf26; font-size: 3.5vw;}
+
+.header .header2 ul li a.active{ background-color: #fcbf26; color: #db0007; font-weight: bold;}
+
+.nav{ position: absolute; top: 0; right: -100vw; width: 70%; padding: 5vw; z-index: 100; background-color: #ffbc0d; clear: both; }
+
+.nav .top_icon{ width: 100%; float: left;}
+.nav .top_icon ul{ width: 20vw; display: flex; float: right; margin-bottom: 3vw;}
+.nav .top_icon .close{ width: 10vw}
+.nav .top_icon .close a{ width: 8.5vw;}
+
+.nav nav{ width: 100%; margin-top: 5vw; float: left;}
+.nav nav>ul>li{ border-bottom: 1px solid #fff;}
+.nav nav ul li a{ font-size: 4.4vw; text-align: center; padding: 3vw; font-family: 'ONE-Mobile-POP'; font-weight: bold;}
+.nav nav .sub{ display: none;}
+.nav nav .sub li a{ font-size: 3.5vw; padding: 2.5vw; font-weight: normal; opacity: 0.9;}
+
+.nav .down_icon{ width: 100%;}
+.nav .down_icon ul{ width: 24vw; display: flex; margin: 0 auto; padding: 5vw;}
+
+.swiper{ width: 100%; }
+.swiper .swiper-slide{ width: 100%; height: 78vh; background-position: center; background-repeat: no-repeat; background-size: cover; }
+
+.swiper .s1{ background-image: url(../img/slide1-2.png);}
+.swiper .s2{ background-image: url(../img/slide2-2.png);}
+.swiper .s3{ background-image: url(../img/slide3-1.png);}
+
+.video{ margin-top: 15vw;}
+.video .video_in{ position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;}
+.video .video_in iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+/* tab menu */
+.tab{ width: 100%; margin-top: 15vw;  height: 40vh; }
+.tab .tab_title{ display: flex;}
+.tab .tab_title a{ width: 50vw; height: 50px; text-align: center; font-size: 4vw; line-height: 50px;  font-weight: bold; color: #222; background-color: #ffbc0d;}
+.tab .tab_title a.active{ background-color: #db0007; color: #fff;}
+
+.tab .tab_content{ width: 100%; background-color: #db0007; position: relative;}
+.tab .tab_content>div{ position: absolute; top: 0; left: 0;}
+
+/* popup */
+.popup{ width: 100%; margin-top: 15vw; }
+.popup h1{ color: #ffbc0d; font-size: 6vw; text-align: center; width: 170px; height: 54px; line-height: 54px; background-color: #db0007; margin: 0 auto;}
+
+.popup .pop_area{ width: 90vw; margin: 0 auto;}
+.popup .pop_area ul{ display: flex; flex-flow: row wrap; justify-content: space-between; margin-top: 10vw; }
+.popup .pop_area ul li{ width: 40vw; margin: 3vw 0vw 5vw; padding: 2vw 2vw 5vw; background-color: #d8d8d8;}
+
+.popup .pop_area ul li h3{ text-align: center; font-size: 4vw; margin-top: 3vw;}
+.popup .pop_area ul li p{ text-align: center; font-size: 2.7vw;}
+
+#imagelightbox{ position: fixed; z-index: 9999; -ms-touch-action: none; touch-action: none;}
+#imagelightbox-overlay
+{
+    /* background-color: #db00078f; */
+    background-color: #f33238; opacity: 0.5;
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}		
+/* "CLOSE" BUTTON */
+
+#imagelightbox-close
+{
+    width: 7vw; /* 40 */
+    height: 7vw; /* 40 */
+    /* text-align: left; */
+    /* background-color: #666; */
+    /* border-radius: 50%; */
+    position: fixed;
+    z-index: 10002;
+    top: 2.5em; /* 40 */
+    right: 2.5em; /* 40 */
+    background-image: url(../img/x_close.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+}
+/* ARROWS */
+
+.imagelightbox-arrow
+{
+    width: 3em; /* 60 */
+    height: 5em; /* 120 */
+    
+    background-position: center; background-size: cover; background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+    display: none;
+    position: fixed;
+    z-index: 10001;
+    top: 50%;
+    margin-top: -3.75em; /* 60 */
+}
+.imagelightbox-arrow-left	{ left: 2.5em; /* 40 */  background-image: url(../img/A-left_w.png);}
+.imagelightbox-arrow-right	{ right: 2.5em; /* 40 */ background-image: url(../img/A-right_w.png);}
+
+/* footer */
+.footer{ width: 100%; margin-top: 15vw; background-color: #db0007; padding: 10vw 0 25vw; text-align: center; line-height: 5vw; font-size: 4vw; color: #fff; float: left;}
+.footer .f_logo{ width: 17vw; margin: 0 auto;}
+
+.footer .info{ width: 100%; margin: 0 auto;}
+.footer .info ul{ display: flex; flex-flow: row wrap; justify-content: center; width: 80vw; margin: 0 auto;}
+.footer .info ul li a{ font-size: 3.5vw; text-align: center; padding: 3vw 0 1vw 0; white-space: nowrap; color: #ffbc0d;}
+
+.footer .info ul li a:after{ content: "|"; float: right; margin: 0 1.5vw 0 2vw; font-weight: bold; color: #ffbc0d;}
+.footer .info ul li:last-child a:after{ content: "";}
+
+.footer address{ font-style: normal; margin: 7vw 0; font-size: 3.2vw;}
+.footer address p{ font-size: 3.5vw; font-weight: bold;}
+
+/* main icon 맨밑아이콘 */
+.main_icon{ position: fixed; bottom: 0; left: 0; height: 75px; width: 100%; background-color: #e6e6e6;}
+.main_icon ul{ display: flex; width: 100%; z-index: 200; justify-content: space-around;}
+.main_icon ul li{ width: 20vw; /*border-top: 1px solid #999; border-right: 1px solid #999;*/}
+.main_icon ul li a{ padding: 3vw}
+
+/* top button */
+.top{ position: fixed; right: 10px; width: 50px; height: 50px;  color: #222; font-size: 15px; text-align: center; line-height: 50px; cursor: pointer; z-index: 100; bottom: 85px; background-color: #f33238; color: #fff; font-family: 'ONE-Mobile-POP';}
+
+/* sub1 - sub page */
+.section{ width: 100%; float: left;}
+.for_menu{ width: 100%;  }
+.for_menu h2{ font-size: 3.8vw; padding: 5vw; float: left; color: #666;}
+.for_menu span{ font-size: 4vw; color: #222;}
+
+.menu_in{ width: 100%; }
+.menu_in ul{ width: 100vw; display: flex; flex-flow: column;}
+.menu_in ul li{ width: 100vw; padding: 2vw 0 0 2vw;}
+.menu_in ul li a{ display: flex; padding: 3vw 2vw;}
+.menu_in ul li a>div{ width: 50vw; margin-top: 10vw;}
+
+.menu_in .m_img{ width: 43vw;}
+
+.menu_in .m_txt{ padding: 7vw 0 0 2vw; text-align: center;}
+.menu_in .m_txt h3{ font-size: 4vw;}
+.menu_in .m_txt h5{ font-size: 2.4vw;}
+.menu_in .m_txt p{ font-size: 3vw; margin-top: 3vw; white-space: nowrap;}
+
+.menu_in ul li:last-child .m_txt{ padding-top: 8vw;}
+
+
+/* 그누보드 */
+.section .qna{ width: 94%; margin: 0 auto; margin-top: 15vw;}
+.section h1{ font-size: 5vw; color: #222; text-align: center; margin-bottom: 5vw; margin-top: 15vw;}
+.section iframe{ width: 100%; height: 100vw;}

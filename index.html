@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, minimum-scale=1.0">
+    <title>Mc</title>
+    <link rel="shortcut icon" href="img/favi.png" type="image">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper-bundle.css" type="text/css">
+    <link rel="stylesheet" href="css/style2.css" type="text/css">
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.mobile-1.5.0-rc1.min.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/imagelightbox.js"></script>
+    <script src="js/main2.js"></script>
+</head>
+<body>
+    <div data-role="page" id="main" class="main">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo"><a href="#main"><img src="img/logo.png" alt="logo"></a></div>
+                <div class="menu_btn"><a href="#"><img src="img/3line.png" alt="메뉴버튼"></a></div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="slidefade" class="active">홈</a></li>
+                    <li><a href="#sub1" data-transition="slideup">메뉴</a></li>
+                    <li><a href="#sub2" data-transition="slideup">이벤트</a></li>
+                    <li><a href="#sub3" data-transition="slideup">고객센터</a></li>
+                </ul>
+            </div>
+            <!-- 3line click 햄버거메뉴 -->
+            <div class="nav">
+                <div class="top_icon">
+                    <ul class="icon">
+                        <li><a href="#"><img src="img/icon_user.png" alt="회원"></a></li>
+                        <li><a href="#"><img src="img/icon_com.png" alt="설정"></a></li>
+                    </ul>
+                    <div class="close">
+                        <a href="#"><img src="img/x_close.png" alt="닫힘"></a>
+                    </div>
+                </div>
+                <nav>                   
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a>
+                            <ul class="sub">
+                                <li><a href="#">추천메뉴</a></li>
+                                <li><a href="#">버거</a></li>
+                                <li><a href="#">맥런치</a></li>
+                                <li><a href="#">맥모닝</a></li>
+                                <li><a href="#">해피밀</a></li>
+                                <li><a href="#">사이드&디저트</a></li>
+                                <li><a href="#">맥카페&음료</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">Store</a>
+                            <ul class="sub">
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">맥딜리버리</a></li>
+                                <li><a href="#">맥드라이브</a></li>
+                                <li><a href="#">임차문의</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">What's New</a>
+                            <ul class="sub">
+                                <li><a href="#">프로모션</a></li>
+                                <li><a href="#">새로운 소식</a></li>
+                                <li><a href="#">이달의 해피밀</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">Story</a>
+                            <ul class="sub">
+                                <li><a href="#">브랜드소개</a></li>
+                                <li><a href="#">맥도날드 경쟁력</a></li>
+                                <li><a href="#">맥도날드 사람들</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+                <div class="down_icon">
+                    <ul>
+                        <li><a href="#"><img src="img/icon_de.png" alt="배달"></a></li>
+                        <li><a href="#"><img src="img/icon_loca.png" alt="위치"></a></li>
+                        <li><a href="#"><img src="img/icon_chat.png" alt="상담"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--header-->
+        <div data-role="content" class="section">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper-container mySwiper2"> 
+                <div class="swiper">
+                    <div class="swiper-container mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide s1"><a href="#"></a></div>
+                          <div class="swiper-slide s2"><a href="#"></a></div>
+                          <div class="swiper-slide s3"><a href="#"></a></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div><!--swiper silde-->
+           <div class="video">
+               <div class="video_in">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/913dKkoXCH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+           </div><!--video-->
+           <div class="tab">
+               <div class="tab_title"> <!--tab 제목-->
+                   <a href="#" class="t1 active">맥모닝</a>
+                   <a href="#" class="t2">해피스낵</a>
+               </div>
+               <div class="tab_content"> <!--tab 내용 1tab에 이미지가 2개이상이면 ul li-->
+                <div class="con1">
+                    <a href="#"><img src="img/tab_m2.png" alt="맥모닝"></a>
+                </div>
+                <div class="con2">
+                    <a href="#"><img src="img/tab_b2.png" alt="해피스낵"></a>
+                </div>
+               </div>
+           </div><!--tab-->
+           <div class="popup">
+               <h1>Menu</h1>
+               <div class="pop_area">
+                    <ul>
+                        <li>
+                            <a href="img/sb1.png" data-imagelightbox="f"> 
+                                <img src="img/6_1.png" alt="상하이 어니언 버거"> <h3>상하이 어니언 버거</h3> <p>Shanghai Onion Burger</p> </a>
+                        </li>
+                        <li>
+                            <a href="img/sb2.png" data-imagelightbox="f"> <img src="img/6_2.png" alt="빅맥">
+                                <h3>빅맥</h3> <p>Big Mac</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/sb3.png" data-imagelightbox="f"> <img src="img/6_3.png" alt="슈니언버거"> 
+                                <h3>슈니언 버거</h3> <p>Shrimp Onion Burger</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/sb4.png" data-imagelightbox="f"> <img src="img/6_4.png" alt="트리플 치즈버거">
+                                <h3>트리플 치즈버거</h3> <p>Triple Cheeseburger</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/sb5.png" data-imagelightbox="f"> <img src="img/6_5.png" alt="맥윙 1인팩">
+                                <h3>맥윙 1인팩</h3> <p>McWings Single Package</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/sb6-1.png" data-imagelightbox="f"> <img src="img/6_6.png" alt="맥윙 콤보"> 
+                                <h3>맥윙 콤보</h3> <p>McWing combo</p>
+                            </a>
+                        </li>
+                    </ul>
+               </div> 
+           </div>
+
+        </div><!--content-->
+
+        <div data-role="footer" class="footer">
+            <div class="f_logo"><img src="img/logo.png" alt="로고"></div>
+            <div class="info">
+                <ul>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">위치정보 이용약관</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">임차문의</a></li>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">인재채용</a></li>
+                </ul>
+            </div>
+            <address>
+                한국맥도날드(유) <br>
+                대표이사: 앤토니 마티네즈 <br>
+                사업자등록번호: 101-81-26409 / 전화주문: 1600-5252 <br>
+            </address>
+            <p>COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</p>
+        </div><!--footer-->
+        <div class="main_icon">
+            <ul>
+                <li><a href="#"><img src="img/icon_retune.png" alt="되돌아가기"></a></li>
+                <li><a href="#"><img src="img/icon_home.png" alt="Home"></a></li>
+                <li><a href="#"><img src="img/icon_bil.png" alt="주문확인"></a></li>
+            </ul>
+        </div><!--icon-->
+    </div>
+    
+    <!-- main page -->
+   
+    <div data-role="page" id="sub1" class="sub1">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo"><a href="#main"><img src="img/logo.png" alt="logo"></a></div>
+                <div class="menu_btn"><a href="#"><img src="img/3line.png" alt="메뉴버튼"></a></div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="slidefade">홈</a></li>
+                    <li><a href="#sub1" data-transition="slideup" class="active">메뉴</a></li>
+                    <li><a href="#sub2" data-transition="slideup">이벤트</a></li>
+                    <li><a href="#sub3" data-transition="slideup">매장안내</a></li>
+                </ul>
+            </div>
+            <!-- 3line click 햄버거메뉴 -->
+            <div class="nav">
+                <div class="top_icon">
+                    <ul class="icon">
+                        <li><a href="#"><img src="img/icon_user.png" alt="회원"></a></li>
+                        <li><a href="#"><img src="img/icon_com.png" alt="설정"></a></li>
+                    </ul>
+                    <div class="close">
+                        <a href="#"><img src="img/x_close.png" alt="닫힘"></a>
+                    </div>
+                </div>
+                <nav>                   
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a>
+                            <ul class="sub">
+                                <li><a href="#">추천메뉴</a></li>
+                                <li><a href="#">버거</a></li>
+                                <li><a href="#">맥런치</a></li>
+                                <li><a href="#">맥모닝</a></li>
+                                <li><a href="#">해피밀</a></li>
+                                <li><a href="#">사이드&디저트</a></li>
+                                <li><a href="#">맥카페&음료</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">Store</a>
+                            <ul class="sub">
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">맥딜리버리</a></li>
+                                <li><a href="#">맥드라이브</a></li>
+                                <li><a href="#">임차문의</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">What's New</a>
+                            <ul class="sub">
+                                <li><a href="#">프로모션</a></li>
+                                <li><a href="#">새로운 소식</a></li>
+                                <li><a href="#">이달의 해피밀</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">Story</a>
+                            <ul class="sub">
+                                <li><a href="#">브랜드소개</a></li>
+                                <li><a href="#">맥도날드 경쟁력</a></li>
+                                <li><a href="#">맥도날드 사람들</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+                <div class="down_icon">
+                    <ul>
+                        <li><a href="#"><img src="img/icon_de.png" alt="배달"></a></li>
+                        <li><a href="#"><img src="img/icon_loca.png" alt="위치"></a></li>
+                        <li><a href="#"><img src="img/icon_chat.png" alt="상담"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--sub1 header-->
+
+        <div data-role="content" class="section">
+            <div class="for_menu">
+                <h2>Home > 메뉴 > <span>추천메뉴</span></h2>
+                <div class="menu_in">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="m_img">
+                                    <img src="img/sub1.png" alt="맥스파이시 상하이 버거 세트">
+                                </div>
+                                <div class="m_txt">
+                                    <h3>맥스파이시 상하이 버거 세트</h3>
+                                    <h5>McSpicy Shanghai Burger Meal</h5>
+                                    <p>매콤한 시즈닝을 입힌 100% 
+                                        닭가슴 통살! <br>
+                                        아삭한 양상추와 신선한 토마토~ <br>
+                                        겉은 바삭, 속은 부드럽고 매콤한
+                                        치킨 패티! <br>
+                                        입맛도 기분도 화끈하게!
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="m_txt">
+                                    <h3>상하이 어니언 버거 세트</h3>
+                                    <h5>Shanghai Onion Burger Meal</h5>
+                                    <p>맥스파이시 상하이 버거에  <br>
+                                        바삭한 어니언을 더해 바삭바삭 풍미! <br>
+                                        맥도날드 상하이 어니언 버거
+                                    </p>
+                                </div>
+                                <div class="m_img">
+                                    <img src="img/sub2.png" alt="상하이 어니언 버거세트">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="m_img">
+                                    <img src="img/sub3.png" alt="슈니언 버거 세트">
+                                </div>
+                                <div class="m_txt">
+                                    <h3>슈니언 버거 세트</h3>
+                                    <h5>Shrimp Onion Burger Meal</h5>
+                                    <p>탱~글한 통새우살과 <br>
+                                        바삭한 어니언의 조화! <br>
+                                        맥도날드 슈니언 버거
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="m_txt">
+                                    <h3>빅맥 세트</h3>
+                                    <h5>Big Mac Meal</h5>
+                                    <p>참깨빵 위에 순 쇠고기 패티 두 장 <br>
+                                        특별한 소스 양상추 치즈 피클 양파 까지! <br>
+                                        오직 하나뿐인 맛 빅맥!
+                                    </p>
+                                </div>
+                                <div class="m_img">
+                                    <img src="img/sub4.png" alt="빅맥 세트">
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <div class="m_img">
+                                    <img src="img/sub5.png" alt="1955버거 세트">
+                                </div>
+                                <div class="m_txt">
+                                    <h3>1955버거 세트</h3>
+                                    <h5>1955 Burger Meal</h5>
+                                    <p>두툼한 순 쇠고기 패티, <br>
+                                        특별한 1955 소스! 깊은 풍미의 <br>
+                                        그릴드 어니언까지! <br>
+                                        맥도날드가 처음 생긴 1955년의 맛을 <br>
+                                        담은 영원한 오리지널 1955 버거 <br>
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="m_txt">
+                                    <h3>필레 오 피쉬 세트</h3>
+                                    <h5>Filet-O-Fish Meal</h5>
+                                    <p>13년만에 돌아왔다! <br>
+                                        100% 알래스카 폴락 패티의 바삭함, <br>
+                                        맥도날드의 타르타르소스와 <br>
+                                        부드러운 스팀번이 조화로운 <br>
+                                        필레 오~ 피쉬!
+                                    </p>
+                                </div>
+                                <div class="m_img">
+                                    <img src="img/sub6.png" alt="필레 오 피쉬 세트">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="m_img">
+                                    <img src="img/sub7.png" alt="더블필레오피쉬 세트">
+                                </div>
+                                <div class="m_txt">
+                                    <h3>더블 필레오피쉬 세트</h3>
+                                    <h5>Double Filet-O-Fish</h5>
+                                    <p>13년만에 돌아왔다! <br>
+                                        100% 알래스카 폴락 패티의 바삭함, <br>
+                                        맥도날드의 타르타르소스와 <br>
+                                        부드러운 스팀번이 조화로운 <br>
+                                        더블 필레 오~ 피쉬
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="m_txt">
+                                    <h3>맥윙 2인팩</h3>
+                                    <h5>McWings Double Package</h5>
+                                    <p>바삭한 껍질과 쫄깃한 속살의 맥윙과 <br>
+                                        시원한 탄산음료까지! <br>
+                                        함께 즐기기 좋은 맥윙 2인팩 <br>
+                                    </p>
+                                </div>
+                                <div class="m_img">
+                                    <img src="img/sub10.png" alt="맥윙 2인팩">
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="m_img">
+                                    <img src="img/sub8-1.png" alt="제주 한라봉 칠러">
+                                </div>
+                                <div class="m_txt">
+                                    <h3>제주 한라봉 칠러</h3>
+                                    <h5>Jeju Hallabong Chiller</h5>
+                                    <p>제주 한라봉의 상큼함을 한잔에! <br>
+                                        제주 한라봉 칠러
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="m_txt">
+                                    <h3>애플망고 칠러</h3>
+                                    <h5>Apple Mango Chiller</h5>
+                                    <p>달콤하고 향기로운 애플망고가 <br>
+                                        더욱 진하게! 애플망고 칠러!
+                                    </p>
+                                </div>
+                                <div class="m_img">
+                                    <img src="img/sub9-1.png" alt="애플망고 칠러">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div> <!--content-->
+
+        <div data-role="footer" class="footer">
+            <div class="f_logo"><img src="img/logo.png" alt="로고"></div>
+            <div class="info">
+                <ul>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">위치정보 이용약관</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">임차문의</a></li>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">인재채용</a></li>
+                </ul>
+            </div>
+            <address>
+                한국맥도날드(유) <br>
+                대표이사: 앤토니 마티네즈 <br>
+                사업자등록번호: 101-81-26409 / 전화주문: 1600-5252 <br>
+            </address>
+            <p>COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</p>
+        </div>
+        <!--footer-->
+        <div class="main_icon">
+            <ul>
+                <li><a href="#"><img src="img/icon_retune.png" alt="되돌아가기"></a></li>
+                <li><a href="#"><img src="img/icon_home.png" alt="Home"></a></li>
+                <li><a href="#"><img src="img/icon_bil.png" alt="주문확인"></a></li>
+            </ul>
+        </div>
+        <!--icon-->
+    </div> <!-- first page -->
+
+    <div data-role="page" id="sub2" class="sub2"> 
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo"><a href="#main"><img src="img/logo.png" alt="logo"></a></div>
+                <div class="menu_btn"><a href="#"><img src="img/3line.png" alt="메뉴버튼"></a></div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="slidefade">홈</a></li>
+                    <li><a href="#sub1" data-transition="slideup">메뉴</a></li>
+                    <li><a href="#sub2" data-transition="slideup" class="active">이벤트</a></li>
+                    <li><a href="#sub3" data-transition="slideup">고객센터</a></li>
+                </ul>
+            </div>
+            <!-- 3line click 햄버거메뉴 -->
+            <div class="nav">
+                <div class="top_icon">
+                    <ul class="icon">
+                        <li><a href="#"><img src="img/icon_user.png" alt="회원"></a></li>
+                        <li><a href="#"><img src="img/icon_com.png" alt="설정"></a></li>
+                    </ul>
+                    <div class="close">
+                        <a href="#"><img src="img/x_close.png" alt="닫힘"></a>
+                    </div>
+                </div>
+                <nav>                   
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a>
+                            <ul class="sub">
+                                <li><a href="#">추천메뉴</a></li>
+                                <li><a href="#">버거</a></li>
+                                <li><a href="#">맥런치</a></li>
+                                <li><a href="#">맥모닝</a></li>
+                                <li><a href="#">해피밀</a></li>
+                                <li><a href="#">사이드&디저트</a></li>
+                                <li><a href="#">맥카페&음료</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">Store</a>
+                            <ul class="sub">
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">맥딜리버리</a></li>
+                                <li><a href="#">맥드라이브</a></li>
+                                <li><a href="#">임차문의</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">What's New</a>
+                            <ul class="sub">
+                                <li><a href="#">프로모션</a></li>
+                                <li><a href="#">새로운 소식</a></li>
+                                <li><a href="#">이달의 해피밀</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">Story</a>
+                            <ul class="sub">
+                                <li><a href="#">브랜드소개</a></li>
+                                <li><a href="#">맥도날드 경쟁력</a></li>
+                                <li><a href="#">맥도날드 사람들</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+                <div class="down_icon">
+                    <ul>
+                        <li><a href="#"><img src="img/icon_de.png" alt="배달"></a></li>
+                        <li><a href="#"><img src="img/icon_loca.png" alt="위치"></a></li>
+                        <li><a href="#"><img src="img/icon_chat.png" alt="상담"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--sub2 header-->
+
+        <div data-role="content" class="section">
+            <div class="ing">
+
+            </div>
+        </div> <!--content-->
+
+        <div data-role="footer" class="footer">
+            <div class="f_logo"><img src="img/logo.png" alt="로고"></div>
+            <div class="info">
+                <ul>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">위치정보 이용약관</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">임차문의</a></li>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">인재채용</a></li>
+                </ul>
+            </div>
+            <address>
+                한국맥도날드(유) <br>
+                대표이사: 앤토니 마티네즈 <br>
+                사업자등록번호: 101-81-26409 / 전화주문: 1600-5252 <br>
+            </address>
+            <p>COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</p>
+        </div><!--footer-->
+        <div class="main_icon">
+            <ul>
+                <li><a href="#"><img src="img/icon_retune.png" alt="되돌아가기"></a></li>
+                <li><a href="#"><img src="img/icon_home.png" alt="Home"></a></li>
+                <li><a href="#"><img src="img/icon_bil.png" alt="주문확인"></a></li>
+            </ul>
+        </div><!--icon-->
+    </div><!--sub2-->
+
+    <div data-role="page" id="sub3" class="sub3"> 
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo"><a href="#main"><img src="img/logo.png" alt="logo"></a></div>
+                <div class="menu_btn"><a href="#"><img src="img/3line.png" alt="메뉴버튼"></a></div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="slidefade">홈</a></li>
+                    <li><a href="#sub1" data-transition="slideup">메뉴</a></li>
+                    <li><a href="#sub2" data-transition="slideup">이벤트</a></li>
+                    <li><a href="#sub3" data-transition="slideup" class="active">고객센터</a></li>
+                </ul>
+            </div>
+            <!-- 3line click 햄버거메뉴 -->
+            <div class="nav">
+                <div class="top_icon">
+                    <ul class="icon">
+                        <li><a href="#"><img src="img/icon_user.png" alt="회원"></a></li>
+                        <li><a href="#"><img src="img/icon_com.png" alt="설정"></a></li>
+                    </ul>
+                    <div class="close">
+                        <a href="#"><img src="img/x_close.png" alt="닫힘"></a>
+                    </div>
+                </div>
+                <nav>                   
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a>
+                            <ul class="sub">
+                                <li><a href="#">추천메뉴</a></li>
+                                <li><a href="#">버거</a></li>
+                                <li><a href="#">맥런치</a></li>
+                                <li><a href="#">맥모닝</a></li>
+                                <li><a href="#">해피밀</a></li>
+                                <li><a href="#">사이드&디저트</a></li>
+                                <li><a href="#">맥카페&음료</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">Store</a>
+                            <ul class="sub">
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">맥딜리버리</a></li>
+                                <li><a href="#">맥드라이브</a></li>
+                                <li><a href="#">임차문의</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">What's New</a>
+                            <ul class="sub">
+                                <li><a href="#">프로모션</a></li>
+                                <li><a href="#">새로운 소식</a></li>
+                                <li><a href="#">이달의 해피밀</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">Story</a>
+                            <ul class="sub">
+                                <li><a href="#">브랜드소개</a></li>
+                                <li><a href="#">맥도날드 경쟁력</a></li>
+                                <li><a href="#">맥도날드 사람들</a></li>
+                            </ul>
+                        </li><!--1st-->
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+                <div class="down_icon">
+                    <ul>
+                        <li><a href="#"><img src="img/icon_de.png" alt="배달"></a></li>
+                        <li><a href="#"><img src="img/icon_loca.png" alt="위치"></a></li>
+                        <li><a href="#"><img src="img/icon_chat.png" alt="상담"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--sub3 header-->
+
+        <div data-role="content" class="section">
+            <!-- 게시판/그누보드>닷홈 가능 -->
+            <h1>자주 하는 질문</h1>
+            <div class="qna">
+                <iframe src="http://glth44.dothome.co.kr/gb/bbs/board.php?bo_table=qa" frameborder="0" scrolling="yes">
+
+                </iframe>
+            </div>
+        </div> <!--content-->
+        
+        <div data-role="footer" class="footer">
+            <div class="f_logo"><img src="img/logo.png" alt="로고"></div>
+            <div class="info">
+                <ul>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">위치정보 이용약관</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">임차문의</a></li>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">인재채용</a></li>
+                </ul>
+            </div>
+            <address>
+                한국맥도날드(유) <br>
+                대표이사: 앤토니 마티네즈 <br>
+                사업자등록번호: 101-81-26409 / 전화주문: 1600-5252 <br>
+            </address>
+            <p>COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</p>
+        </div><!--footer-->
+        <div class="main_icon">
+            <ul>
+                <li><a href="#"><img src="img/icon_retune.png" alt="되돌아가기"></a></li>
+                <li><a href="#"><img src="img/icon_home.png" alt="Home"></a></li>
+                <li><a href="#"><img src="img/icon_bil.png" alt="주문확인"></a></li>
+            </ul>
+        </div><!--icon-->
+    </div><!--sub3-->
+    <div class="top">TOP</div>
+</body>
+</html>
